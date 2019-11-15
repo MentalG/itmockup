@@ -1,0 +1,22 @@
+{
+  "name": "itmockup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MentalG/itmockup.git"
+  },
+  "author": "Illia Hromov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MentalG/itmockup/issues"
+  },
+  "homepage": "https://github.com/MentalG/itmockup#readme",
+  "devDependencies": {
+    "webpack": "^4.41.2"
+  }
+}
