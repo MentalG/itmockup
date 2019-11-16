@@ -1,8 +1,10 @@
+$bg: brown;
+
 .container {
     display: flex;
 }
 
 .block {
     width: 50%;
-    background-color: brown;
+    background-color: $bg;
 }
