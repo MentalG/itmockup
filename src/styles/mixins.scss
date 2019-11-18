@@ -1,0 +1,4 @@
+@mixin color($first: blue, $second: red) {
+    color: $first;
+    background-color: $second;
+}
