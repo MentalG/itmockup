@@ -15,3 +15,44 @@
 .first-section {
     display: flex;
 }
+
+.sidebar {
+    width: 100%;
+    position: fixed;
+    color: white;
+}
+
+.sidebar:hover {
+    border: solid 1px;
+    border-color: #ffffff73;
+    border-width: 0px 0px 1px 0px;
+}
+
+.sidebar-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    font-size: 17px;
+}
+.sidebar-list-item {
+    padding: 40px;
+}
+
+.sidebar-list-item:hover {
+    background-color: #ffffff5e;
+    border: 1px solid;
+    border-width: 0px 0px 3px 0px;
+    cursor: pointer;
+}
+
+.videoBG {
+    background-image: url('../videos/wallpaper.gif');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1920px;
+    height: 100vh;
+    padding:0;
+    margin:0;
+}

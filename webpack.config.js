@@ -1,10 +1,10 @@
 const HtmlWebPackPlugin = require("html-webpack-plugin");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
     mode: 'production',
-    module : {
+    module: {
         rules: [
             {
                 test: /\.js$/,
@@ -21,23 +21,24 @@ module.exports = {
                         loader: 'image-webpack-loader',
                         options: {
                             mozjpeg: {
-                              progressive: true,
-                              quality: 100
+                                progressive: true,
+                                quality: 100
                             },
                             optipng: {
-                              enabled: false,
+                                enabled: false,
                             },
                             pngquant: {
-                              quality: [0.65, 0.90],
-                              speed: 4
+                                quality: [0.65, 0.90],
+                                speed: 4
                             },
                             gifsicle: {
-                              interlaced: false,
+                                interlaced: false,
+                                optimizationLevel:3
                             },
                             webp: {
-                              quality: 75
+                                quality: 75
                             }
-                          }
+                        }
                     }
                 ]
             },
