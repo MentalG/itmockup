@@ -14,6 +14,10 @@ module.exports = {
                 }
             },
             {
+                test: /\.mp4$/,
+                use: 'file-loader?name=videos/[name].[ext]',
+            },
+            {
                 test: /\.(png|svg|jpe?g|gif)$/,
                 use: [
                     'file-loader',
@@ -21,13 +25,8 @@ module.exports = {
                         loader: 'image-webpack-loader',
                         options: {
                             mozjpeg: {
-<<<<<<< HEAD
-                                progressive: true,
-                                quality: 100
-=======
                               progressive: true,
                               quality: 90
->>>>>>> bfd688332b291fe9972628f029dde1da55e6f4ba
                             },
                             optipng: {
                                 enabled: false,
